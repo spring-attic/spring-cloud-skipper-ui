@@ -1,0 +1,33 @@
+<table *ngIf="packageSummaries?.length > 0" class="table table-hover">
+  <thead>
+  <tr>
+    <th>API version</th>
+    <th>Kind</th>
+    <th>Name</th>
+    <th>Origin</th>
+    <th>Version</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-template ngFor let-item
+               [ngForOf]="packageSummaries">
+    <tr>
+      <td>
+        {{item.apiVersion}}
+      </td>
+      <td>
+        {{item.kind}}
+      </td>
+      <td>
+        {{item.name}}
+      </td>
+      <td>
+        {{item.origin}}
+      </td>
+      <td>
+        {{item.version}}
+      </td>
+    </tr>
+  </ng-template>
+  </tbody>
+</table>
