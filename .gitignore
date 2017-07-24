@@ -1,0 +1,10 @@
+src/main/resources/public/dashboard
+target/
+ui/node
+ui/node_modules
+.idea
+*.iml
+*.ipr
+*.iws
+npm-debug.log
+.vscode
