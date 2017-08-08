@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class PackageSummaryService {
 
-  private packageSummariesURL = '/packageSummaries';
+  private packageSummariesURL = '/packageMetadata';
 
   constructor(private http: Http) {
   }

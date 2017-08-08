@@ -8,7 +8,7 @@
     </span>
     </div>
 </div>
-<table *ngIf="packageSummaries?.length > 0" class="table table-hover">
+<table *ngIf="packageMetadata?.length > 0" class="table table-hover">
   <thead>
   <tr>
     <th>API version</th>
@@ -20,7 +20,7 @@
   </thead>
   <tbody>
   <ng-template ngFor let-item
-               [ngForOf]="packageSummaries">
+               [ngForOf]="packageMetadata">
     <tr>
       <td>
         {{item.apiVersion}}

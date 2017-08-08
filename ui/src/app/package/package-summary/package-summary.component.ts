@@ -7,13 +7,13 @@ import {PackageSummary} from '../../shared/model/package-summary';
   templateUrl: './package-summary.component.html'})
 export class PackageSummaryComponent implements OnInit {
 
-  public packageSummaries: PackageSummary[];
+  public packageMetadata: PackageSummary[];
 
   constructor(private packageSummaryService: PackageSummaryService) { }
 
   ngOnInit() {
     this.packageSummaryService.getPackageSummaries().subscribe(data => {
-      this.packageSummaries = data._embedded.packageSummaries;
+      this.packageMetadata = data._embedded.packageMetadata;
     });
   }
 

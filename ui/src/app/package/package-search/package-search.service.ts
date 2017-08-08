@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class PackageSearchService {
 
-  private packageSearchService = '/packageSummaries/search/findByName';
+  private packageSearchService = '/packageMetadata/search/findByName';
 
   constructor(public http: Http) {
   }

@@ -11,7 +11,7 @@ export class PackageSearchComponent implements OnInit {
 
   public searchName: string;
 
-  public packageSummaries: PackageSummary[];
+  public packageMetadata: PackageSummary[];
 
   constructor(private searchService: PackageSearchService) {
   }
@@ -21,7 +21,7 @@ export class PackageSearchComponent implements OnInit {
 
   searchByName(searchName: string) {
     this.searchService.searchByName(searchName).subscribe(data => {
-        this.packageSummaries = data._embedded.packageSummaries;
+        this.packageMetadata = data._embedded.packageMetadata;
       }
     );
   }
