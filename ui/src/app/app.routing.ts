@@ -1,7 +1,7 @@
-import {Routes, RouterModule} from "@angular/router";
-import {NgModule} from "@angular/core";
-import {PackageSummaryComponent} from "./package/package-summary/package-summary.component";
-import {PackageSearchComponent} from "./package/package-search/package-search.component";
+import {Routes, RouterModule} from '@angular/router';
+import {NgModule} from '@angular/core';
+import {PackageSummaryComponent} from './package/package-summary/package-summary.component';
+import {PackageSearchComponent} from './package/package-search/package-search.component';
 
 const appRoutes: Routes = [
   {

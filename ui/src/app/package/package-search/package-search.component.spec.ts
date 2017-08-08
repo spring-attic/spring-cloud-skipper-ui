@@ -1,6 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PackageSearchComponent } from './package-search.component';
+import {PackageSearchComponent} from './package-search.component';
+import {PackageSearchService} from './package-search.service';
+import {HttpModule} from '@angular/http';
 
 describe('PackageSearchComponent', () => {
   let component: PackageSearchComponent;
@@ -8,9 +10,11 @@ describe('PackageSearchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PackageSearchComponent ]
+      declarations: [PackageSearchComponent],
+      providers: [PackageSearchService],
+      imports: [HttpModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

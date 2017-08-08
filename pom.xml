@@ -6,9 +6,8 @@
 	<artifactId>spring-cloud-skipper-ui</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Spring Cloud Skipper GUI</name>
-	<description>This application provides the Dashboard application of Spring Cloud Data Flow.</description>
-	<url>http://cloud.spring.io/spring-cloud-dataflow/</url>
+	<name>Spring Cloud Skipper UI</name>
+	<description>This application provides the Dashboard application of Spring Cloud Skipper.</description>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
 		<url>http://www.spring.io</url>
@@ -91,20 +90,8 @@
 							<followSymlinks>false</followSymlinks>
 						</fileset>
 						<fileset>
-							<directory>ui/dist</directory>
-							<followSymlinks>false</followSymlinks>
-						</fileset>
-						<fileset>
-							<directory>src/main/resources/public/dashboard</directory>
-							<followSymlinks>false</followSymlinks>
-						</fileset>
-						<fileset>
 							 <directory>ui/node</directory>
 							 <followSymlinks>false</followSymlinks>
-						</fileset>
-						<fileset>
-							 <directory>ui/node_modules</directory>
-							  <followSymlinks>false</followSymlinks>
 						</fileset>
 				</filesets>
 				</configuration>

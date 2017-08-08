@@ -4,9 +4,6 @@ import {Component, OnInit} from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
-export class AppComponent implements OnInit {
-  title = 'Spring Cloud Skipper';
-
-  ngOnInit() {
-  }
+export class AppComponent {
+  public title = 'Spring Cloud Skipper';
 }

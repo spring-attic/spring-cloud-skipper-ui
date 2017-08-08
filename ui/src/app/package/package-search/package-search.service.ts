@@ -1,9 +1,8 @@
-import {Injectable} from "@angular/core";
-import {Http, Response} from "@angular/http";
-import {Observable} from "rxjs/Observable";
-import "rxjs/add/operator/catch";
-import "rxjs/add/operator/map";
-import {PackageSummary} from "../../shared/model/package-summary";
+import {Injectable} from '@angular/core';
+import {Http, Response} from '@angular/http';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PackageSearchService {
@@ -14,7 +13,7 @@ export class PackageSearchService {
   }
 
   public searchByName(searchName: string): Observable<any> {
-    let params = {};
+    const params = {};
     params['name'] = searchName;
     return this.http.get(this.packageSearchService, {params: params})
       .map(this.extractData.bind(this))
@@ -26,16 +25,15 @@ export class PackageSearchService {
   }
 
   private handleError(error: Response | any) {
-    let errMsg: string = '';
+    let errMsg: '';
 
     if (error instanceof Response) {
       const body = error.json() || '';
-      let isFirst: boolean = true;
-      for (let bodyElement of body) {
+      let isFirst = true;
+      for (const bodyElement of body) {
         if (!isFirst) {
           errMsg += '\n';
-        }
-        else {
+        } else {
           isFirst = false;
         }
         errMsg += bodyElement.message;

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {PackageSearchService} from "./package-search.service";
-import {Observable} from "rxjs/Observable";
-import {PackageSummary} from "../../shared/model/package-summary";
+import {PackageSearchService} from './package-search.service';
+import {PackageSummary} from '../../shared/model/package-summary';
 
 @Component({
   selector: 'app-package-search',
@@ -20,7 +19,7 @@ export class PackageSearchComponent implements OnInit {
   public ngOnInit() {
   }
 
-  private searchByName(searchName: string) {
+  searchByName(searchName: string) {
     this.searchService.searchByName(searchName).subscribe(data => {
         this.packageSummaries = data._embedded.packageSummaries;
       }
