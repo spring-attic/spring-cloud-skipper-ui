@@ -10,12 +10,12 @@
 	<description>This application provides the Dashboard application of Spring Cloud Skipper.</description>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
-		<url>http://www.spring.io</url>
+		<url>https://www.spring.io</url>
 	</organization>
 	<licenses>
 	  <license>
 	    <name>The Apache License, Version 2.0</name>
-	    <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+	    <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
 	  </license>
 	</licenses>
 	<scm>
@@ -30,7 +30,7 @@
 			<name>Ilayaperumal Gopinathan</name>
 			<email>ilayaperumalg at pivotal.io</email>
 			<organization>Pivotal Software, Inc.</organization>
-			<organizationUrl>http://www.spring.io</organizationUrl>
+			<organizationUrl>https://www.spring.io</organizationUrl>
 		</developer>
 	</developers>
 	<prerequisites>
