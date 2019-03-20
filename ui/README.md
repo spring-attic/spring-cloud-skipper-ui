@@ -88,11 +88,11 @@ The Dashboard will be running at `http://localhost:4200/`. The browser will auto
 
 Use [https://github.com/tjunnone/npm-check-updates](https://github.com/tjunnone/npm-check-updates)
 
-[Angular]: http://angular.io/
+[Angular]: https://angular.io/
 [Angular CLI]: https://cli.angular.io/
 [frontend-maven-plugin]: https://github.com/eirslett/frontend-maven-plugin
 [Git]: https://git-scm.com/
-[Maven]: http://maven.apache.org/
-[Node.js]: http://nodejs.org/
+[Maven]: https://maven.apache.org/
+[Node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
 [Protractor]: https://github.com/angular/protractor
