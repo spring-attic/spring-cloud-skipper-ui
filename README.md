@@ -1,3 +1,5 @@
+# spring-cloud-skipper-ui is no longer actively maintained by VMware, Inc.
+
 This is the *Spring Cloud Skipper* user interface (UI). The UI uses [Angular][].
 
 > The Git repository for the main *Spring Cloud Skipper* project is at: https://github.com/spring-cloud/spring-cloud-skipper
